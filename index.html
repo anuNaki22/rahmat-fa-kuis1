@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style type="text/css"></style>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,600,600i,700,700i|Berkshire+Swash|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>
+                Formulir Pendaftran | Pekan Olahraga dan Seni Guru TKA/TPA Tahun 2020
+                <!-- <i class="fa fa-list"></i> -->
+            </h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>NAMA PESERTA</label>
+                <input type="text" placeholder="Nama Peserta" id="nama" />
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>TEMPAT LAHIR</label>
+                <input type="text" placeholder="Surabaya" id="tempatlahir" />
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <form action="/action_page.php">
+                    <label> TANGGAL LAHIR </label>
+                    <input type="date" id="tanggallahir" name="tanggal lahir">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </form>
+            </div>
+            <div class="form-control">
+                <label>NOMOR TELEPON</label>
+                <input type="tel" placeholder="+62-XXX-XXXX" id="telp" />
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label> PILIH JENIS LOMBA</label>
+                <select name="jenis lomba" id="jenis lomba">
+                  <option selected>• Pilih Jenis Lomba •</option>
+                  <option value="1">Tarik Tambang</option>
+                  <option value="2">Lari Estafet</option>
+                  <option value="3">Gobak Sodor</option>
+                  <option value="4">Tartil</option>
+                  <option value="5">Ceramah</option>
+                </select>
+                <i class="fa fa-check-circle ic-select"></i>
+                <i class="fa fa-exclamation-circle ic-select"></i>
+                <small>Error message</small>
+            </div>
+            
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
