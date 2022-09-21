@@ -29,7 +29,7 @@ function checkInputs() {
     const tempatlahirValue = tempatlahir.value.trim();
     const tanggallahirValue = tanggallahir.value.trim();
     const telpValue = telp.value.trim();
-    const jenislombaValue = nama.value.trim();
+    const jenislombaValue = jenislomba.value.trim();
     const namaUnitValue = namaUnit.value.trim();
     const namaKelValue = namaKel.value.trim();
     const namaKecValue = namaKec.value.trim();
@@ -42,13 +42,13 @@ function checkInputs() {
     }
 
     if (tempatlahirValue === "") {
-        setErrorFor(tempatlahir, "tempatlahir tidak boleh kosong");
+        setErrorFor(tempatlahir, "tempat lahir tidak boleh kosong");
     } else {
         setSuccessFor(tempatlahir);
     }
 
     if (tanggallahirValue === "") {
-        setErrorFor(tanggallahir, "tanggallahir tidak boleh kosong");
+        setErrorFor(tanggallahir, "tanggal lahir tidak boleh kosong");
     } else {
         setSuccessFor(tanggallahir);
     }
@@ -65,7 +65,7 @@ function checkInputs() {
         setSuccessFor(namaKel);
     }
 
-    if (namaKec === "") {
+    if (namaKecValue === "") {
         setErrorFor(namaKec, "nama tidak boleh kosong");
     } else {
         setSuccessFor(namaKec);
