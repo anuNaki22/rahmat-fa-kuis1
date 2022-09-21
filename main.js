@@ -77,7 +77,7 @@ function checkInputs() {
         setSuccessFor(telp);
     }
 
-    if (jenislombaValue === "0" || "• Pilih Jenis Lomba •") {
+    if (jenislombaValue === "0" || jenislombaValue === "• Pilih Jenis Lomba •") {
         setErrorFor(jenislomba, "Pilih jenis lomba Anda");
     } else {
         setSuccessFor(jenislomba);
