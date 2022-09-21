@@ -36,8 +36,6 @@ function checkInputs() {
 
     if (tempatlahirValue === "") {
         setErrorFor(tempatlahir, "tempatlahir tidak boleh kosong");
-    } else if (!tempatlahirValue) {
-        setErrorFor(tempatlahir, "tempatlahir tidak valid");
     } else {
         setSuccessFor(tempatlahir);
     }
@@ -49,15 +47,13 @@ function checkInputs() {
     }
 
     if (telpValue === "") {
-        setErrorFor(telp, "tempatlahir tidak boleh kosong");
-    } else if (!telpValue) {
-        setErrorFor(telp, "tempatlahir tidak valid");
+        setErrorFor(telp, "telpon tidak boleh kosong");
     } else {
         setSuccessFor(telp);
     }
 
     if (jenislombaValue === "0") {
-        setErrorFor(jenislomba, "Pilih jenislomba Anda");
+        setErrorFor(jenislomba, "Pilih jenis lomba Anda");
     } else {
         setSuccessFor(jenislomba);
     }
@@ -78,10 +74,4 @@ function setErrorFor(input, message) {
 function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = "form-control success";
-}
-
-function istempatlahir(tempatlahir) {
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-        tempatlahir
-    );
 }
