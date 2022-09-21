@@ -4,6 +4,9 @@ const tempatlahir = document.getElementById("tempatlahir");
 const tanggallahir = document.getElementById("tanggallahir");
 const telp = document.getElementById("telp");
 const jenislomba = document.getElementById("jenislomba");
+const namaUnit = document.getElementById("namaUnit");
+const namaKel = document.getElementById("namaKel");
+const namaKec = document.getElementById("namaKec");
 
 let isFormValid = 1;
 form.addEventListener("submit", (e) => {
@@ -27,6 +30,10 @@ function checkInputs() {
     const tanggallahirValue = tanggallahir.value.trim();
     const telpValue = telp.value.trim();
     const jenislombaValue = nama.value.trim();
+    const namaUnitValue = namaUnit.value.trim();
+    const namaKelValue = namaKel.value.trim();
+    const namaKecValue = namaKec.value.trim();
+
 
     if (namaValue === "") {
         setErrorFor(nama, "nama tidak boleh kosong");
@@ -44,6 +51,24 @@ function checkInputs() {
         setErrorFor(tanggallahir, "tanggallahir tidak boleh kosong");
     } else {
         setSuccessFor(tanggallahir);
+    }
+
+    if (namaUnitValue === "") {
+        setErrorFor(namaUnit, "nama tidak boleh kosong");
+    } else {
+        setSuccessFor(namaUnit);
+    }
+
+    if (namaKelValue === "") {
+        setErrorFor(namaKel, "nama tidak boleh kosong");
+    } else {
+        setSuccessFor(namaKel);
+    }
+
+    if (namaKec === "") {
+        setErrorFor(namaKec, "nama tidak boleh kosong");
+    } else {
+        setSuccessFor(namaKec);
     }
 
     if (telpValue === "") {
